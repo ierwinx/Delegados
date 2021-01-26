@@ -13,6 +13,7 @@
 		AAE1643025C0B830001ED7F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE1642E25C0B830001ED7F2 /* Main.storyboard */; };
 		AAE1643225C0B832001ED7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE1643125C0B832001ED7F2 /* Assets.xcassets */; };
 		AAE1643525C0B832001ED7F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE1643325C0B832001ED7F2 /* LaunchScreen.storyboard */; };
+		AAE1643E25C0B944001ED7F2 /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1643D25C0B944001ED7F2 /* SegundaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AAE1643125C0B832001ED7F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE1643425C0B832001ED7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAE1643625C0B832001ED7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE1643D25C0B944001ED7F2 /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				AAE1642825C0B830001ED7F2 /* AppDelegate.swift */,
 				AAE1642A25C0B830001ED7F2 /* SceneDelegate.swift */,
 				AAE1642C25C0B830001ED7F2 /* ViewController.swift */,
+				AAE1643D25C0B944001ED7F2 /* SegundaViewController.swift */,
 				AAE1642E25C0B830001ED7F2 /* Main.storyboard */,
 				AAE1643125C0B832001ED7F2 /* Assets.xcassets */,
 				AAE1643325C0B832001ED7F2 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE1643E25C0B944001ED7F2 /* SegundaViewController.swift in Sources */,
 				AAE1642D25C0B830001ED7F2 /* ViewController.swift in Sources */,
 				AAE1642925C0B830001ED7F2 /* AppDelegate.swift in Sources */,
 				AAE1642B25C0B830001ED7F2 /* SceneDelegate.swift in Sources */,
