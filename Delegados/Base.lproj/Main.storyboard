@@ -17,21 +17,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me8-Nx-tOD">
-                                <rect key="frame" x="142" y="428" width="130" height="40"/>
+                                <rect key="frame" x="30" y="423" width="354" height="50"/>
                                 <color key="backgroundColor" red="0.16232442859999999" green="0.38186523319999999" blue="0.2667799294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="jLX-2X-I9d"/>
-                                    <constraint firstAttribute="height" constant="40" id="ljS-Oi-3RT"/>
+                                    <constraint firstAttribute="height" constant="50" id="ljS-Oi-3RT"/>
                                 </constraints>
                                 <state key="normal" title="Escoge tu lado">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="k0h-81-h2n" kind="presentation" modalPresentationStyle="fullScreen" id="YD9-p4-Nml"/>
+                                    <action selector="chooseColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIt-2r-yld"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escogiste: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfz-Q1-u29">
-                                <rect key="frame" x="50" y="518" width="314" height="45"/>
+                                <rect key="frame" x="50" y="523" width="314" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="AMl-SO-IYq"/>
                                 </constraints>
@@ -45,9 +44,10 @@
                         <constraints>
                             <constraint firstItem="rfz-Q1-u29" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="GAk-lZ-NQ0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rfz-Q1-u29" secondAttribute="trailing" constant="50" id="Wnh-HD-SUn"/>
+                            <constraint firstItem="Me8-Nx-tOD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZV7-Hv-tRJ"/>
                             <constraint firstItem="rfz-Q1-u29" firstAttribute="top" secondItem="Me8-Nx-tOD" secondAttribute="bottom" constant="50" id="ZrU-wK-eht"/>
-                            <constraint firstItem="Me8-Nx-tOD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjN-5X-Sme"/>
-                            <constraint firstItem="Me8-Nx-tOD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tn3-ND-rXu"/>
+                            <constraint firstItem="Me8-Nx-tOD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="glF-4A-DmB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Me8-Nx-tOD" secondAttribute="trailing" constant="30" id="n5o-Xq-bMu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -61,20 +61,19 @@
         <!--Segunda View Controller-->
         <scene sceneID="qYg-wl-6Ym">
             <objects>
-                <viewController id="k0h-81-h2n" customClass="SegundaViewController" customModule="Delegados" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SegundaViewController" id="k0h-81-h2n" customClass="SegundaViewController" customModule="Delegados" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IK3-Ed-Jrx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Va-0o-O0F">
-                                <rect key="frame" x="99.5" y="425.5" width="215" height="45"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Va-0o-O0F">
+                                <rect key="frame" x="30" y="423" width="354" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqi-jO-Cz0">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="50"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="6Wj-wF-D5u"/>
-                                            <constraint firstAttribute="height" constant="45" id="8i4-il-9h1"/>
+                                            <constraint firstAttribute="height" constant="50" id="8i4-il-9h1"/>
                                         </constraints>
                                         <state key="normal" title="Rojo">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,11 +83,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwx-mm-ftB">
-                                        <rect key="frame" x="115" y="0.0" width="100" height="45"/>
+                                        <rect key="frame" x="184.5" y="0.0" width="169.5" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="Zly-WZ-wiR"/>
-                                            <constraint firstAttribute="width" constant="100" id="s6o-8Q-TVP"/>
+                                            <constraint firstAttribute="height" constant="50" id="Zly-WZ-wiR"/>
                                         </constraints>
                                         <state key="normal" title="Azul">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,6 +101,8 @@
                         <viewLayoutGuide key="safeArea" id="zH9-nl-3YY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zH9-nl-3YY" firstAttribute="trailing" secondItem="4Va-0o-O0F" secondAttribute="trailing" constant="30" id="DSD-vx-d6n"/>
+                            <constraint firstItem="4Va-0o-O0F" firstAttribute="leading" secondItem="zH9-nl-3YY" secondAttribute="leading" constant="30" id="DeW-dG-Yo4"/>
                             <constraint firstItem="4Va-0o-O0F" firstAttribute="centerY" secondItem="IK3-Ed-Jrx" secondAttribute="centerY" id="Eve-dl-TkT"/>
                             <constraint firstItem="4Va-0o-O0F" firstAttribute="centerX" secondItem="IK3-Ed-Jrx" secondAttribute="centerX" id="uLT-7d-ngC"/>
                         </constraints>
