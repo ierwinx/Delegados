@@ -1,12 +1,12 @@
 import UIKit
 
-protocol ColorSeleccionDelegate {
+protocol ColorSeleccionDelegate: class {
     func didTapChoiseColor(nombre: String)
 }
 
 class SegundaViewController: UIViewController {
     
-    var seleccionDelegate: ColorSeleccionDelegate?
+    weak var seleccionDelegate: ColorSeleccionDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()

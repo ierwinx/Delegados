@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     }
     
 }
-
+/*
+ Sin se llega a tener muchas vistas, y es necesario el valor en controladores de un nivel asabajo es necesario agregarel delegado entodas para pasarlos datos
+ */
 extension ViewController: ColorSeleccionDelegate {
     func didTapChoiseColor(nombre: String) {
         self.lblOpcion.text = "Escogiste \(nombre)"
